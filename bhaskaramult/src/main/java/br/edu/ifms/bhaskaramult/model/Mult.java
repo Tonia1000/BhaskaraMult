@@ -1,28 +1,20 @@
 package br.edu.ifms.bhaskaramult.model;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
-public class Mult{
-    private int x;
-    private int y;
+@Getter
+@Setter
+@NoArgsConstructor
+public class Mult {
+    private Double x;
+    private Double y;
 
-     public Long getX() {
-        return x;
-    }
-
-    public void setX(int x) {
+    public Mult(Double x, Double y) {
         this.x = x;
-    }
-
-     public Long getY() {
-        return y;
-    }
-
-    public void setY(int y) {
         this.y = y;
     }
-
 
 
 }
